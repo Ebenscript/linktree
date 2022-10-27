@@ -1,5 +1,17 @@
 import "./App.css";
 import profile from "./images/profile.svg";
+import dots from "./images/dots-horizontal.svg";
+import share from "./images/share.svg";
+
+function ButtonLink(props) {
+  const { id, url, text } = props;
+
+  return (
+    <a id={id} href={url} className="button-link">
+      {text}
+    </a>
+  );
+}
 
 function App() {
   return (
@@ -10,6 +22,48 @@ function App() {
         <h2 id="slack" hidden>
           ebenscript
         </h2>
+
+        <button className="share-button share-button__mobile">
+          <img src={dots} alt="horizontal dots" />
+        </button>
+
+        <button className="share-button share-button__desktop">
+          <img src={share} alt="share arrow" />
+        </button>
+      </div>
+
+      <div className="links-section">
+        <ButtonLink id="twitter" url="#twitter" text="Twitter Link" />
+
+        <ButtonLink
+          id="btn__zuri"
+          url="https://training.zuri.team/"
+          text="Zuri Team"
+        />
+
+        <ButtonLink
+          id="books"
+          url="http://books.zuri.team/"
+          text="Zuri Books"
+        />
+
+        <ButtonLink
+          id="book__python"
+          url="https://books.zuri.team/python-for-beginners?ref_id=ebenscript"
+          text="Python Books"
+        />
+
+        <ButtonLink
+          id="pitch"
+          url="https://background.zuri.team/"
+          text="Background Check for Coders"
+        />
+
+        <ButtonLink
+          id="book__design"
+          url="https://books.zuri.team/design-rules"
+          text="Design Books"
+        />
       </div>
     </>
   );
