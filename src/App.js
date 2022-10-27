@@ -2,6 +2,8 @@ import "./App.css";
 import profile from "./images/profile.svg";
 import dots from "./images/dots-horizontal.svg";
 import share from "./images/share.svg";
+import slack from "./images/slack.svg";
+import github from "./images/github.svg";
 
 function ButtonLink(props) {
   const { id, url, text } = props;
@@ -64,6 +66,16 @@ function App() {
           url="https://books.zuri.team/design-rules"
           text="Design Books"
         />
+      </div>
+
+      <div className="social-section">
+        <a href="#ebenscript" className="social-link">
+          <img src={slack} alt="slack logo" />
+        </a>
+
+        <a href="https://github.com/ebenscript" className="social-link">
+          <img src={github} alt="github logo" />
+        </a>
       </div>
     </>
   );
