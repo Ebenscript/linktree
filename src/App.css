@@ -113,4 +113,47 @@ body {
   gap: 24px;
   padding-top: 24px;
   padding-bottom: 24px;
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .social-section {
+    margin-bottom: 64px;
+  }
+}
+
+.footer-section {
+  padding: 32px 16px;
+}
+
+.footer-section__container {
+  border-top: 1px solid var(--gray100);
+  padding: 32px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-text {
+  font-weight: 400;
+  color: var(--gray);
+}
+
+@media screen and (min-width: 768px) {
+  .footer-section {
+    padding: 48px 16px;
+  }
+
+  .footer-section__container {
+    height: 64px;
+    padding: 0 32px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .footer-text {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
