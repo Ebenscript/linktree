@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/linktree/static/css/main.ef03f75b.css",
+    "main.js": "/linktree/static/js/main.6951abfe.js",
+    "static/media/I4G.svg": "/linktree/static/media/I4G.601ff0479d970c740e8b7d7ba7821548.svg",
+    "static/media/profile.svg": "/linktree/static/media/profile.56601b4d04e63bff29bcaad20a3f8bb1.svg",
+    "static/media/zuri.svg": "/linktree/static/media/zuri.0f8c3aa843c87d1f28aa0826858bd0ef.svg",
+    "static/media/slack.svg": "/linktree/static/media/slack.9bd310e6cac8ec8dfd699312c2fc16fb.svg",
+    "static/media/github.svg": "/linktree/static/media/github.6a40f212828370260b880b93f8d36b56.svg",
+    "static/media/dots-horizontal.svg": "/linktree/static/media/dots-horizontal.2af13fa62624ad9f6952c87bb0fd1888.svg",
+    "index.html": "/linktree/index.html",
+    "static/media/share.svg": "/linktree/static/media/share.e3f81b496e21f13d54272e5772ace63b.svg",
+    "main.ef03f75b.css.map": "/linktree/static/css/main.ef03f75b.css.map",
+    "main.6951abfe.js.map": "/linktree/static/js/main.6951abfe.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ef03f75b.css",
+    "static/js/main.6951abfe.js"
+  ]
+}
