@@ -4,6 +4,8 @@ import dots from "./images/dots-horizontal.svg";
 import share from "./images/share.svg";
 import slack from "./images/slack.svg";
 import github from "./images/github.svg";
+import zuri from "./images/zuri.svg";
+import i4g from "./images/I4G.svg";
 
 function ButtonLink(props) {
   const { id, url, text } = props;
@@ -76,6 +78,20 @@ function App() {
         <a href="https://github.com/ebenscript" className="social-link">
           <img src={github} alt="github logo" />
         </a>
+      </div>
+
+      <div className="footer-section">
+        <div className="footer-section__container">
+          <a href="https://zuri.team">
+            <img src={zuri} alt="zuri logo" />
+          </a>
+
+          <p className="footer-text">HNG Internship 9 Frontend Task</p>
+
+          <a href="#i4g">
+            <img src={i4g} alt="i4g logo" />
+          </a>
+        </div>
       </div>
     </>
   );
