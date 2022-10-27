@@ -19,10 +19,12 @@ function ButtonLink(props) {
 
 function App() {
   return (
-    <>
+    <div className="app">
       <div className="profile-section">
         <img src={profile} id="profile__img" alt="user avatar" />
-        <h1 id="twitter">ebenscript</h1>
+        <h1 id="twitter" className="twitter">
+          ebenscript
+        </h1>
         <h2 id="slack" hidden>
           ebenscript
         </h2>
@@ -93,7 +95,7 @@ function App() {
           </a>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
