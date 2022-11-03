@@ -1,7 +1,7 @@
 import { Util } from "../../shared/util";
 import "./input.css";
 
-export function TextField(props) {
+export function Input(props) {
   const { label, id, error, hint, className, ...inputProps } = props;
   const hasError = !!error;
   const classNames = Util.classNames("input", className, {
@@ -9,7 +9,7 @@ export function TextField(props) {
   });
 
   return (
-    <div className={classNames.join(" ")}>
+    <div className={classNames}>
       <label htmlFor={id}>{label}</label>
 
       <input id={id} {...inputProps} />
