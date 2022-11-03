@@ -1,9 +1,13 @@
 :root {
   --ff-inter: "Inter", sans-serif;
+  --primary300: #84caff;
   --black: #101828;
   --gray: #667085;
   --gray100: #eaecf0;
   --gray200: #d0d5dd;
+  --gray700: #344054;
+  --gray600: #475467;
+  --gap: 24px;
 }
 
 * {
@@ -25,117 +29,19 @@ body {
   }
 }
 
-.profile-section {
+.display-grid {
+  display: grid;
+  gap: var(--gap);
+}
+
+.display-flex {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
-  position: relative;
-  margin-bottom: 32px;
-}
-
-.twitter {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 30px;
-  text-align: center;
-}
-
-.share-button {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 1px dashed var(--gray200);
-  background-color: transparent;
-  cursor: pointer;
-
-  position: absolute;
-  top: 0;
-  right: 16px;
-  transition: 0.2s ease-in-out;
-}
-
-.share-button:hover {
-  background-color: var(--gray);
-}
-
-.share-button__desktop {
-  display: none;
+  gap: var(--gap);
 }
 
 @media screen and (min-width: 768px) {
-  .profile-section {
-    margin-bottom: 56px;
-  }
-
-  .share-button__mobile {
-    display: none;
-  }
-
-  .share-button__desktop {
-    display: block;
-  }
-
-  .share-button {
-    transform: translateY(-50%);
-    right: 25%;
-  }
-}
-
-.links-section {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  margin-bottom: 24px;
-}
-
-.social-section {
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  margin-bottom: 32px;
-}
-
-@media screen and (min-width: 768px) {
-  .social-section {
-    margin-bottom: 64px;
-  }
-}
-
-.footer-section {
-  padding: 32px 16px;
-}
-
-.footer-section__container {
-  border-top: 1px solid var(--gray100);
-  padding: 32px 0 0;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.footer-text {
-  font-weight: 400;
-  color: var(--gray);
-}
-
-@media screen and (min-width: 768px) {
-  .footer-section {
-    padding: 48px 16px;
-  }
-
-  .footer-section__container {
-    height: 64px;
-    padding: 0 32px;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-  }
-
-  .footer-text {
-    font-size: 16px;
-    line-height: 24px;
+  .display-flex-tab {
+    display: flex;
+    gap: var(--gap);
   }
 }
