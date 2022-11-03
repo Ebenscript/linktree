@@ -5,7 +5,7 @@ export function Input(props) {
   const { label, id, error, hint, className, ...inputProps } = props;
   const hasError = !!error;
   const classNames = Util.classNames("input", className, {
-    "text-field--error": hasError,
+    "input--error": hasError,
   });
 
   return (
