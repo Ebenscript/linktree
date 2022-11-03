@@ -44,6 +44,7 @@ function ContactPage() {
                 })}
                 onChange={handleChange}
                 onBlur={handleBlur}
+                id="first_name"
                 placeholder="Enter your first name"
               />
 
@@ -54,6 +55,7 @@ function ContactPage() {
                 onChange={handleChange}
                 onBlur={handleBlur}
                 label="Last name"
+                id="last_name"
                 error={getErrMsg({
                   name: "lastName",
                   touched,
@@ -75,6 +77,7 @@ function ContactPage() {
                 touched,
                 values,
               })}
+              id="email"
               label="Email"
               placeholder="yourname@email.com"
             />
@@ -90,6 +93,7 @@ function ContactPage() {
                 values,
                 message: "Please enter a message",
               })}
+              id="message"
               label="Message"
               placeholder="Send me a message and I'll reply you as soon as possible..."
             />
@@ -104,7 +108,11 @@ function ContactPage() {
             </Checkbox>
           </div>
 
-          <Button disabled={hasError || !consented} type="submit">
+          <Button
+            id="btn_submit"
+            disabled={hasError || !consented}
+            type="submit"
+          >
             Send message
           </Button>
         </form>
