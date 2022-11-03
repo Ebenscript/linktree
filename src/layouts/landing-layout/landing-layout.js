@@ -1,8 +1,8 @@
 import "./landing-layout.css";
-import i4g from "../../images/I4G-logo.svg";
+import i4g from "../../images/I4G.svg";
 import zuri from "../../images/zuri.svg";
 
-export default function DefaultLayout(props) {
+export function LandingLayout(props) {
   return (
     <div className="landing-layout">
       <div className="landing-layout__container">{props.children}</div>
